@@ -8,8 +8,6 @@ set -g status-style fg=cyan,bg=brightblack
 set -g status-left-style bg=green,bg=brightblack
 set -g status-left-length 40
 
-# set -g status-left "#S #[fg=brightgreen]#{@separator_session_name} #[fg=yellow]#I #[fg=white]#{@main_separator} #[fg=cyan]#P"
-# set -g status-left " #[fg=brightred]\uE0B6#[fg=black]#[bg=brightred]#S#[fg=brightred]#[bg=default]\uE0B4 #[fg=brightgreen]#{@separator_session_name} #[fg=yellow]#I #[fg=white]#{@main_separator} #[fg=cyan]#P"
 set -g status-left " #[fg=yellow,italics]\uE0B7 #S \uE0B5 #[fg=brightgreen,default]#{@separator_session_name} #[fg=yellow]#I #[fg=white]#{@main_separator} #[fg=cyan]#P"
 
 # Right side of status bar

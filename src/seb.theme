@@ -31,8 +31,11 @@ set -g window-status-separator ""
 set -g status-justify centre
 
 # Pane border
-set -g pane-border-style fg=brightblack,bg=default
-set -g pane-active-border-style fg=brightblack,bg=default
+# set -g pane-border-style fg=brightblack,bg=default
+set -g pane-border-style fg=#6E6C7E,bg=default
+# set -g pane-active-border-style fg=brightblack,bg=default
+# set -g pane-active-border-style fg=#ABE9B3,dim,bg=default
+set -g pane-active-border-style fg=#F8BD96,dim,bg=default
 
 # Pane number indicator
 set -g display-panes-colour red
@@ -50,3 +53,5 @@ set -g message-command-style fg=default,bg=default
 
 # Mode
 set -g mode-style fg=default,bg=red
+
+# separators

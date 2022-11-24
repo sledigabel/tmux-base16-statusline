@@ -1,17 +1,20 @@
 # Status update interval
 set -g status-interval 1
 
+background_color="#1F2937"
+project_icon="\uf013"
+
 # Basic status bar colors
-set -g status-style fg=cyan,bg=#334155
+set -g status-style fg=cyan,bg=$background_color
 
 # Left side of status bar
-set -g status-left-style bg=green,bg=#334155
+set -g status-left-style bg=green,bg=$background_color
 set -g status-left-length 40
 
-set -g status-left "#[fg=yellow,italics]\uE0B7#S\uE0B5 #[fg=brightgreen,default]#{@separator_session_name} #[fg=yellow]#I #[fg=white]#{@main_separator} #[fg=cyan]#P #[fg=white]#{@main_separator} "
+set -g status-left " #[fg=yellow,italics]$project_icon <#S>"
 
 # Right side of status bar
-set -g status-right-style fg=cyan,bg=#334155
+set -g status-right-style fg=cyan,bg=$background_color
 set -g status-right-length 40
 
 # Window status
@@ -19,7 +22,7 @@ set -g window-status-format " #I:#W "
 set -g window-status-current-format "\uE0B7#I:#W\uE0B5"
 
 # Current window status
-set -g window-status-current-style fg=red,bg=#334155
+set -g window-status-current-style fg=red,bg=$background_color
 
 # Window with activity status
 set -g window-status-activity-style fg=brightblack,bg=yellow

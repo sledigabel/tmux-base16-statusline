@@ -1,0 +1,57 @@
+# Status update interval
+set -g status-interval 1
+
+# Basic status bar colors
+set -g status-style fg=cyan,bg=#334155
+
+# Left side of status bar
+set -g status-left-style bg=green,bg=#334155
+set -g status-left-length 40
+
+set -g status-left "#[fg=yellow,italics]\uE0B7#S\uE0B5 #[fg=brightgreen,default]#{@separator_session_name} #[fg=yellow]#I #[fg=white]#{@main_separator} #[fg=cyan]#P #[fg=white]#{@main_separator} "
+
+# Right side of status bar
+set -g status-right-style fg=cyan,bg=#334155
+set -g status-right-length 40
+
+# Window status
+set -g window-status-format " #I:#W "
+set -g window-status-current-format "\uE0B7#I:#W\uE0B5"
+
+# Current window status
+set -g window-status-current-style fg=red,bg=#334155
+
+# Window with activity status
+set -g window-status-activity-style fg=brightblack,bg=yellow
+
+# Window separator
+set -g window-status-separator ""
+
+# Window status alignment
+set -g status-justify centre
+
+# Pane border
+# set -g pane-border-style fg=brightblack,bg=default
+set -g pane-border-style fg=#6E6C7E,bg=default
+# set -g pane-active-border-style fg=brightblack,bg=default
+# set -g pane-active-border-style fg=#ABE9B3,dim,bg=default
+set -g pane-active-border-style fg=#F8BD96,dim,bg=default
+
+# Pane number indicator
+set -g display-panes-colour red
+set -g display-panes-active-colour magenta
+
+# Clock mode
+set -g clock-mode-colour red
+set -g clock-mode-style 24
+
+# Message
+set -g message-style fg=black,bg=red
+
+# Command message
+set -g message-command-style fg=default,bg=default
+
+# Mode
+set -g mode-style fg=default,bg=red
+
+# separators

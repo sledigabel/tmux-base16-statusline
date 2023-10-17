@@ -10,22 +10,25 @@ set -g status-style fg=cyan,bg=$background_color
 # Left side of status bar
 set -g status-left-style bg=green,bg=$background_color
 set -g status-left-length 40
-
-set -g status-left " #[fg=yellow,italics]$project_icon <#S>"
+set -g status-left " #[fg=yellow,italics]$project_icon #S"
 
 # Right side of status bar
 set -g status-right-style fg=cyan,bg=$background_color
 set -g status-right-length 40
+# set -g status-right '#(gitmux "#{session_path}")'
+set -g status-right "#{prefix_highlight} #[fg=yellow]%H:%M:%S #[fg=white]#{@main_separator} #[fg=green]%d-%b-%y "
 
 # Window status
-set -g window-status-format " #I:#W "
-set -g window-status-current-format "\uE0B7#I:#W\uE0B5"
+set -g window-status-format " #I "
+# set -g window-status-current-format "\uE0B7#I:#W\uE0B5"
+set -g window-status-current-format "[#I]"
 
 # Current window status
 set -g window-status-current-style fg=red,bg=$background_color
 
 # Window with activity status
-set -g window-status-activity-style fg=brightblack,bg=yellow
+# set -g window-status-activity-style fg=brightblack,bg=yellow
+set -g window-status-activity-style fg=green,bg=$background_color
 
 # Window separator
 set -g window-status-separator ""

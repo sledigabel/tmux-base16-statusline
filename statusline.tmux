@@ -8,6 +8,7 @@ separator_session_name_option='@base16-statusline-separator-session-name'
 # default_separator_session_name=''
 # default_separator_session_name=""
 default_separator_session_name=""
+
 # default_separator_session_name='💻 '
 
 main_separator_option='@base16-statusline-main-separator'

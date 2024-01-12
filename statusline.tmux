@@ -3,7 +3,7 @@
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 theme_option='@base16-statusline'
-default_theme='main'
+default_theme='nord'
 separator_session_name_option='@base16-statusline-separator-session-name'
 # default_separator_session_name=''
 # default_separator_session_name=""

@@ -10,7 +10,7 @@ set -g status-style fg=cyan,bg=black
 set -g status-left-style bg=green,bg=black
 set -g status-left-length 40
 
-<!-- set -g status-left "#S #[fg=brightgreen]#{@separator_session_name} #[fg=yellow]#I #[fg=white]#{@main_separator} #[fg=cyan]#P" -->
+# set -g status-left "#S #[fg=brightgreen]#{@separator_session_name} #[fg=yellow]#I #[fg=white]#{@main_separator} #[fg=cyan]#P"
 set -g status-left " #[fg=blue,italics]$project_icon #S"
 
 # Right side of status bar
@@ -18,14 +18,17 @@ set -g status-right-style fg=cyan,bg=black
 set -g status-right-length 40
 
 # Window status
-set -g window-status-format " #I:#W#F "
-set -g window-status-current-format " #I:#W#F "
+# set -g window-status-format " #I:#W#F "
+# set -g window-status-current-format " #I:#W#F "
+set -g window-status-format " #I "
+# set -g window-status-current-format "\uE0B7#I:#W\uE0B5"
+set -g window-status-current-format "[#I]"
 
 # Current window status
-set -g window-status-current-style fg=black,bg=blue
+set -g window-status-current-style fg=blue,bg=black
 
 # Window with activity status
-set -g window-status-activity-style fg=brightblack,bg=yellow
+set -g window-status-activity-style fg=green,bg=black
 
 # Window separator
 set -g window-status-separator ""
@@ -34,7 +37,7 @@ set -g window-status-separator ""
 set -g status-justify centre
 
 # Pane border
-set -g pane-border-style fg=brightblack,bg=default
+set -g pane-border-style fg=black,bg=default
 set -g pane-active-border-style fg=brightblack,bg=default
 
 # Pane number indicator
